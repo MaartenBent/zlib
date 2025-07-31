@@ -8,9 +8,8 @@
 #ifndef ZCONF_H
 #define ZCONF_H
 
-
-#ifdef __APPLE__
-/* use wxWidgets' configure */
+/* use wxWidgets' configure results, notably HAVE_UNISTD_H */
+#if defined(__APPLE__) || defined(wxHAVE_SETUP_H)
 #include "wx/setup.h"
 #endif
 
